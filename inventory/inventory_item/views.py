@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Product
 from .forms import ProductForm
+
 # Create your views here.
 def index(request):
     items = Product.objects.all()
@@ -40,14 +41,4 @@ def edit(request, key):
         'form' : form
     }
     return render(request, 'dashboard/edit.html', context)
-# def product(request):
-#     items = Product.objects.all()
-#     if request.method == 'POST':
-#         form = ProductForm(request.POST)
-#     else:
-#         form = ProductForm()
-#     context = {
-#         'items' : items,
-#         'form' :form,
-#     }
-#     return render(request, 'dashboard/product.html', context)
+
