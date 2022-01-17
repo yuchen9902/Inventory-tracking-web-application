@@ -1,7 +1,8 @@
 # Inventory-tracking-web-application
 Shopify Backend Developer Intern Challenge - Summer 2022
 # Description 
-This is an inventory tracking web application for a logistics company. The web application has basic CRUD functionality and a CSV export feature. The web application is built based on Django framework and Python.
+This is an inventory tracking web application for a logistics company. The web application has basic CRUD functionality and a CSV export feature.\
+The web application is built based on Django framework and Python.
 # System requirements
 1.Python 3.8.2+\
 2.Git
@@ -13,7 +14,7 @@ python3 -m venv ./venv\
 source venv/bin/activate\
 pip install Django\
 pip install \
-django-crispy-forms\
+django-crispy-forms
 # Run server 
 If you want to run the server, type the code below in your terminal.\
 python manage.py runserver\
