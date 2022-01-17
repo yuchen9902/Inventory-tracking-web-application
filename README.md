@@ -20,8 +20,9 @@ The web application is built based on Django framework and Python.
   pip install django-crispy-forms
 ```
 # Run server 
-If you want to run the server, type the code below in your terminal.\
+If you want to run the server, type the code below in your terminal.
 ```
+  cd inventory/
   python manage.py runserver
 ```
 Then the server is up at : http://127.0.0.1:8000/
