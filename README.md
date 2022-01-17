@@ -14,15 +14,15 @@ The web application is built based on Django framework and Python.
 ```
 ## 2. Set up environment
 ```
-  python3 -m venv ./venv\
-  source venv/bin/activate\
-  pip install Django\
+  python3 -m venv ./venv
+  source venv/bin/activate
+  pip install Django
   pip install django-crispy-forms
 ```
 # Run server 
 If you want to run the server, type the code below in your terminal.\
 ```
-  python manage.py runserver\
+  python manage.py runserver
 ```
 Then the server is up at : http://127.0.0.1:8000/
 
