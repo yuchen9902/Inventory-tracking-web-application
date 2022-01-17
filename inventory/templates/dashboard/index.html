@@ -14,16 +14,6 @@
                 <form method="POST">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <!-- <div class="form-group">
-                        <label for="exampleInputEmail1">Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Quantity</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1">
-                    </div> -->
-
                     <input class="btn btn-success btn-block" type="submit" value="Add Product">
 
                 
@@ -53,6 +43,7 @@
                     {% endfor%}
                 </tbody>
             </table>
+            <a class="btn btn-info btn-sm mr-2" href="{% url 'export'%}">Export Data To CSV </a>
         </div>
     </div>
 

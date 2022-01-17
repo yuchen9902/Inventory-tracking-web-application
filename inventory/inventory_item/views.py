@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Product
 from .forms import ProductForm
+import csv
 
 # Create your views here.
 def index(request):
@@ -42,3 +43,15 @@ def edit(request, key):
     }
     return render(request, 'dashboard/edit.html', context)
 
+def export_csv(request):
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="products.csv"'
+
+    writer = csv.writer(response)
+    writer.writerow(['name','quantity'])
+
+    products = Product.objects.all().values_list('name', 'quantity')
+    for product in products:
+        writer.writerow(product)
+
+    return response
