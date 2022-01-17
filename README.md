@@ -13,8 +13,7 @@ git clone https://github.com/yuchen9902/Inventory-tracking-web-application.git
 python3 -m venv ./venv\
 source venv/bin/activate\
 pip install Django\
-pip install \
-django-crispy-forms
+pip install django-crispy-forms
 # Run server 
 If you want to run the server, type the code below in your terminal.\
 python manage.py runserver\
